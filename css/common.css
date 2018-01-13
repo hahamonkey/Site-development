@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    width:1002px;
+    margin:0 auto;
+}
+a{
+    text-decoration:none;
+}
+ul,ol{
+    list-style: none;
+}
+img{
+    border:0px;
+}

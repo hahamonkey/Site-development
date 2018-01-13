@@ -1,0 +1,268 @@
+#header{
+    height:120px;
+    line-height:120px;
+}
+#header .wrapper{
+    height:120px;
+}
+.logo{
+    width:191px;
+    height:120px;
+    float:left;
+    position:relative;
+}
+.logo a{
+    width:191px;
+    height:52px;
+    position:absolute;
+    top:32px;
+    left:0;
+    background:url("../img/Logo.png");
+}
+.nav{
+    float:left;
+    margin-left:134px;
+}
+.nav li{
+    float:left;
+    padding:0 25px;
+    position:relative;
+}
+.nav a{
+    color:#000;
+    font-size:16px;
+    font-weight: 200;
+}
+.nav span{
+    width:1px;
+    height:15px;
+    position:absolute;
+    top:50%;
+    right:0;
+    -webkit-transform: translateY(-50%);
+    background:#000;
+}
+.search{
+    width:130px;
+    height:30px;
+    background-color:#f1f3f6;
+    float:right;
+    margin-top:45px;
+    position:relative;
+}
+.sContent{
+    width:100px;
+    height:30px;
+    position:absolute;
+    top:0;
+    left:12px;
+    color:#e0aaaa;
+    font-size:5px;
+    line-height:30px;
+}
+.souSuo{
+    float:right;
+    width:30px;
+    height:30px;
+    background:url('../img/icons.png') -282px -35px no-repeat;
+}
+
+#show{
+    height:460px;
+    background-color:#31333e;
+}
+#show .wrapper{
+    position:relative;
+}
+#show img{
+    width:574px;
+    height:324px;
+    position:absolute;
+    top:110px;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+}
+#show h2{
+    color:#fff;
+    position:absolute;
+    top:40px;
+    left:140px;
+}
+.more{
+    width:140px;
+    height:50px;
+    line-height:50px;
+    padding-left:40px;
+    background:#00aeff;
+    border-radius:5px;
+    position:absolute;
+    top:40px;
+    right:120px;
+}
+.more a{
+    color:#fff;
+    font-size:20px;
+    font-weight:100;
+}
+.prev{
+    width:54px;
+    height:114px;
+    position:absolute;
+    top:173px;
+    left:0;
+    background:url('../img/icons.png') -355px -18px no-repeat;
+}
+.next{
+    width:54px;
+    height:114px;
+    position:absolute;
+    top:173px;
+    right:0;
+    background:url('../img/icons.png') -404px -18px no-repeat;
+}
+
+.nav-col{
+    height:492px;
+}
+.nav-col li{
+    width:334px;
+    height:492px;
+    float:left;
+}
+.nav-col h2{
+    margin-top:80px;
+    text-align:center;
+    font-weight:100;
+}
+.nav-col .img1{
+    width:100px;
+    height:100px;
+
+    border-radius:50%;
+    background:#cb9bf7 url('../img/icons.png') -536px -26px no-repeat;
+    margin:50px auto;
+}
+.nav-col .img2{
+    width:100px;
+    height:100px;
+
+    border-radius:50%;
+    background:#e0c339 url('../img/icons.png') -642px -33px no-repeat;
+    margin:50px auto;
+}
+.nav-col .img3{
+    width:100px;
+    height:100px;
+
+    border-radius:50%;
+    background:#39e0da url('../img/icons.png') -756px -33px no-repeat;
+    margin:50px auto;
+}
+.nav-col .title{
+    display:block;
+    padding:0 10px;
+    font-weight:100;
+    text-align: center;
+}
+.nav-col .title-more{
+    display:block;
+    text-align:center;
+    font-size:20px;
+    color:#00aeff;
+    margin-top:10px;
+}
+
+#work{
+    background:#e2e7ed;
+    height:500px;
+}
+#work h2,#client h2{
+    font-weight:200;
+    height:70px;
+    line-height:70px;
+}
+#work .imgBox{
+    height:430px;
+}
+.imgBox li{
+    width:250px;
+    height:200px;
+    float:left;
+    overflow:hidden;
+}
+
+#client{
+    height:154px;
+}
+#client .wrapper{
+    position: relative;
+}
+.clientImg{
+    height:84px;
+    background:url('../img/clients.jpg') center center no-repeat;
+}
+.client-prev{
+    width:40px;
+    height:60px;
+    background:url('../img/icon.png') -40px -15px no-repeat;
+    position:absolute;
+    top:88px;
+    left:0;
+}
+.client-next{
+    width:40px;
+    height:60px;
+    background:url('../img/icon.png') -127px -15px no-repeat;
+    position:absolute;
+    top:88px;
+    right:0;
+}
+
+#footer{
+    height:176px;
+    background-color:#31333e;
+}
+#footer .wrapper{
+    position:relative;
+}
+#footer ul{
+    float:left;
+    margin-top:40px;
+    height:30px;
+}
+#footer li span{
+    width:1px;
+    height:12px;
+    position:absolute;
+    top:6px;
+    right:0;
+    background:#fff;
+
+}
+#footer li{
+    float:left;
+    color:#fff;
+    padding:0 15px;
+    position:relative;
+}
+.ins{
+    position:absolute;
+    left:12px;
+    top:75px;
+    color:#fff;
+}
+#footer .wrapper>span:last-child{
+    color:#fff;
+    font-size:12px;
+    position:absolute;
+    left:12px;
+    top:126px;
+}
+.icon a{
+    position:absolute;
+    right:0;
+    top:40px;
+    width:300px;
+    height:50px;
+    background:url('../img/icon1.png') -30px -10px no-repeat;
+}
