@@ -28,6 +28,9 @@
     padding:0 25px;
     position:relative;
 }
+.nav .selected{
+    color:#00aeff;
+}
 .nav a{
     color:#000;
     font-size:16px;
@@ -73,6 +76,23 @@
 }
 #show .wrapper{
     position:relative;
+}
+#show ul{
+    width:2004px;
+    overflow:hidden;
+    height:460px;
+
+}
+#show li{
+    position:absolute;
+    top:0;
+    left:0;
+    width:1002px;
+    height:460px;
+    display:none;
+}
+#show li.selected{
+    display:block;
 }
 #show img{
     width:574px;

@@ -17,8 +17,8 @@
                 <a href="#">About</a>
                 <span></span>
             </li>
-            <li class="selected">
-                <a href="#">Services</a>
+            <li>
+                <a href="#"  class="selected">Services</a>
                 <span></span>
             </li>
             <li>
@@ -39,9 +39,19 @@
 </div>
 <div id="show">
     <div class="wrapper">
-        <h2>We are a Creative Digital Agency</h2>
-        <a href="#"><img src="img/show.png" alt=""/></a>
-        <div class="more"><a href="">learn more</a></div>
+        <ul>
+            <li class="selected">
+                <h2>We are a Creative Digital Agency</h2>
+                <a href="#"><img src="img/show.png" alt=""/></a>
+                <div class="more"><a href="">learn more</a></div>
+
+            </li>
+            <li>
+                <h2>We are a Creative Digital Agency</h2>
+                <a href="#"><img src="img/show1.png" alt=""/></a>
+                <div class="more"><a href="">learn more</a></div>
+            </li>
+        </ul>
         <div class="prev"></div>
         <div class="next"></div>
     </div>
@@ -114,7 +124,42 @@
     </div>
 </div>
 <script>
-
+    var oShow=document.getElementById('show');
+    var oUl=oShow.getElementsByTagName('ul')[0];
+    var aLi=oShow.getElementsByTagName('li');
+    var oPrev=oShow.getElementsByClassName('prev')[0];
+    var oNext=oShow.getElementsByClassName('next')[0];
+    var iNow=0;
+    var oNav=document.getElementsByClassName('nav')[0];
+    var aNum=oNav.getElementsByTagName('a');
+    for(var i=0;i<aNum.length;i++){
+        aNum[i].onclick=function(){
+            for(var j=0;j<aNum.length; j++){
+                aNum[j].className = '';
+            }
+            this.className='selected';
+        }
+    }
+    oPrev.onclick=function(){
+        iNow--;
+        if(iNow==-1){
+            iNow=1;
+        }
+        changeImg(iNow,aLi);
+    };
+    oNext.onclick=function(){
+        iNow++;
+        if(iNow==2){
+            iNow=0;
+        }
+        changeImg(iNow,aLi);
+    };
+    function changeImg(idx,obj){ //在函数中this指向window
+        for(var j=0;j<obj.length; j++){
+            obj[j].className = '';
+        }
+        obj[idx].className = 'selected';
+    }
 </script>
 </body>
 </html>
